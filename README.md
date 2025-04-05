@@ -1,17 +1,35 @@
-# ECG Analysis Toolkit
+# ECG Analysis Toolkit 🫀
 
-A Python package for analyzing ECG signals, detecting arrhythmias, and identifying ST-segment abnormalities.
+![ECG Example](https://github.com/yourusername/ecg-analysis/raw/main/images/ecg_example.png)  
+*Example ECG signal with detected abnormalities*
 
-## Features
+A comprehensive Python toolkit for processing, analyzing, and visualizing Electrocardiogram (ECG) signals, with special focus on arrhythmia detection and ST-segment analysis.
 
-- Download MIT-BIH Arrhythmia Database
-- Preprocess ECG signals (filtering, normalization)
-- Segment signals around annotations
-- Train CNN-LSTM models for arrhythmia detection
-- Analyze ST-segment abnormalities
-- Visualization tools
+## 🔍 Project Overview
 
-## Installation
+This toolkit provides:
 
-```bash
-pip install -r requirements.txt
+- **Automated processing** of raw ECG signals from MIT-BIH Arrhythmia Database
+- **Machine learning-powered** arrhythmia detection using CNN-LSTM models
+- **ST-segment analysis** for potential heart attack detection
+- **Interactive visualization** tools for clinical and research applications
+
+Key features:
+- End-to-end pipeline from raw data to clinical insights
+- Modular, object-oriented design for easy extension
+- Pre-trained models for immediate use
+- Comprehensive visualization capabilities
+
+## 🛠️ Technical Details
+
+### Pipeline Architecture
+
+```mermaid
+graph TD
+    A[Raw ECG Data] --> B[Preprocessing]
+    B --> C[Segmentation]
+    C --> D[Feature Extraction]
+    D --> E[Arrhythmia Detection]
+    D --> F[ST-Segment Analysis]
+    E --> G[Visualization]
+    F --> G
